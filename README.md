@@ -5,7 +5,7 @@ Sentiment analysis, analyzing user’s textual reviews, to perform a binary clas
 ---
 
 This repo contains: 
-- [Project assignment](./PDFs/assignment.pdf)
+- [Project Assignment](./PDFs/assignment.pdf)
 - [Datasets](./datasets/)
-- code
-- [Report](./PDFs/report.pdf)
+- [code](./code/)
+- [Project Report](./PDFs/report.pdf)
