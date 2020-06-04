@@ -14,8 +14,8 @@ In order to limit the effect of the unbalanced dataset (i.e. overfitting) for th
 
 #### Results
 
-The selection of the best model was done experimentally by using the different parameters, such as the number of features, the choice of tokenization (unigrams and bigrams), the use of a normalizer etc.
-Overall the best accuracy 0.9694 was obtained using Linear SVM with stemmer and token unigrams plus bigrams as features and emoticons replacement as pre-processing technique. The main related issue was that with SVM was not performed aggressive feature selection.
+The selection of the best model was done experimentally by using the different parameters, such as the number of features, the choice of tokenization (unigrams and bigrams), the use of a normalizer etc. <br>
+Overall the **best accuracy 0.9694** was obtained using *Linear SVM* with stemmer and token unigrams plus bigrams as features and emoticons replacement as pre-processing technique. The main related issue was that with SVM was not performed aggressive feature selection.
 
 ---
 
