@@ -34,14 +34,19 @@ This repo is organized as follows:
 
 ## 👨‍💻 Implementation 
 
-In the `models.py` has been implemented different classifiers: SVM (linear), RandomForest, Naive Bayes Classifiers (Multinomial). During training an hyperparameter search is performed.
-In order to limit the effect of the unbalanced dataset (i.e. overfitting) for the training and validation phase a cross-validation approach was used, specifically with the implementation of Scikit-learn’s `KFold` class. The approach divides all the samples in groups of subsamples and consequently the prediction function was learned using k-1 folds and the fold left out was used for test. The default value for the number of folds was set to 10.
+Inside `models.py` are implemented different classifiers: 
+- SVM (linear)
+- RandomForest
+- Näive Bayes Classifiers (Multinomial).
 
-The selection of the best model was done experimentally by using the different parameters, such as the number of features, the choice of tokenization (unigrams and bigrams), the use of a normalizer etc.
+During training an hyperparameter search is performed (using a validation set).
+In order to limit the effect of the unbalanced dataset (i.e. overfitting) for the training and validation phase a cross-validation approach was used, specifically with the implementation `KFold` class from `scikit-learn`. The approach divides all the samples in groups of subsamples and consequently the prediction function was learned using k-1 folds and the fold left out was used for test. The default value for the number of folds was set to 10.
+
+The selection of the best model was done experimentally by using the different parameters and looking at the f1-score obtained on the validation set.
 
 ## Results
 
-Overall the **best accuracy 0.9694** was obtained using *Linear SVM* with stemmer and token unigrams plus bigrams as features and emoticons replacement as pre-processing technique. The main related issue was that with SVM was not performed aggressive feature selection.
+The f1-score (on test set) of the best performing model is **0.9694**. The model is a *Linear SVM* with stemmer, token unigrams plus bigrams as features and emoticons replacement as pre-processing technique.
 
 ▶ Further details about data exploration, data preprocessing, model selection and results [see the project report](./PDFs/report.pdf).
 
