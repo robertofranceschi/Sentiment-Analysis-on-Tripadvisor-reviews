@@ -1,4 +1,4 @@
-# Sentiment Analysis on Tripadvisor reviews 🛌🏽💬
+# Sentiment Analysis on Tripadvisor reviews 🛌🏽
 
 ## Problem Description
 
@@ -8,13 +8,13 @@ Perform sentiment analysis of textual reviews of hotel stays. The goal is to bui
 
 The dataset for this competition has been specifically scraped from the <tripadvisor.it> Italian web site. It contains 41077 textual reviews written in the Italian language.
 The dataset is provided as textual files with multiple lines. Each line is composed of two fields: `text` and `class`. The `text` field contains the review written by the user, while the `class` field contains a label that can get the following values:
-- pos: if the review shows a positive sentiment.
-- neg: if the review shows a negative sentiment.
+- **pos**: if the review shows a positive sentiment.
+- **neg**: if the review shows a negative sentiment.
 
 **Dataset tree hierarchy** The data have been distributed in two separate collections. Each collection is in a different file.
 The dataset archive is organized as follows:
-- `development.csv` (Development set): a collection of reviews with the class column. This collection of data has to be used during the development of the regression model.
-- `evaluation.csv` (Evaluation set): a collection of reviews without the class column. This collection of data has to be used to produce the submission file.
+- `development.csv` (Development set): a collection of reviews **with** the class column. This collection of data has to be used during the development of the regression model.
+- `evaluation.csv` (Evaluation set): a collection of reviews **without** the class column. This collection of data has to be used to produce the submission file.
 - `sample_submission.csv`: a sample submission file.
 
 ### Evaluation metric
