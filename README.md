@@ -1,14 +1,31 @@
 # Sentiment Analysis on Tripadvisor reviews 🛌🏽💬
 
-## Overview
+## Problem Description
 
 Perform sentiment analysis of textual reviews of hotel stays. The goal is to build a binary classifier able to understand whether the users expressed positive or negative feelings in their comments.
 
 ### Dataset
 
-The dataset contains 41077 textual reviews specifically scraped from the tripadvisor.it website. Each review is labeled either positive or negative. 
+The dataset for this competition has been specifically scraped from the <tripadvisor.it> Italian web site. It contains 41077 textual reviews written in the Italian language.
+The dataset is provided as textual files with multiple lines. Each line is composed of two fields: `text` and `class`. The `text` field contains the review written by the user, while the `class` field contains a label that can get the following values:
+- pos: if the review shows a positive sentiment.
+- neg: if the review shows a negative sentiment.
 
-This repo contains: 
+**Dataset tree hierarchy** The data have been distributed in two separate collections. Each collection is in a different file.
+The dataset archive is organized as follows:
+- `development.csv` (Development set): a collection of reviews with the class column. This collection of data has to be used during the development of the regression model.
+- `evaluation.csv` (Evaluation set): a collection of reviews without the class column. This collection of data has to be used to produce the submission file.
+- `sample_submission.csv`: a sample submission file.
+
+### Evaluation metric
+Your submissions will be evaluated exploiting the `f1_score` with the following configuration:
+```
+  from sklearn.metrics import f1_score
+  f1_score(y_true, y_pred, average='weighted')
+```
+
+### 
+This repo is organized as follows: 
 - [Project Assignment](./PDFs/assignment.pdf)
 - [Datasets](./datasets/)
 - [code](./code/)
@@ -27,4 +44,5 @@ Overall the **best accuracy 0.9694** was obtained using *Linear SVM* with stemme
 
 ▶ Further details about data exploration, data preprocessing, model selection and results [see the project report](./PDFs/report.pdf).
 
-
+### References
+[1] Original dataset located [here](http://dbdmg.polito.it/wordpress/wp-content/uploads/2020/01/dataset_winter_2020.zip).
