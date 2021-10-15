@@ -1,4 +1,4 @@
-# Sentiment Analysis on Tripadvisor reviews 🛌🏽
+# 🛌🏽 Sentiment Analysis on Tripadvisor reviews
 
 ## Problem Description
 
@@ -24,14 +24,15 @@ Your submissions will be evaluated exploiting the `f1_score` with the following 
   f1_score(y_true, y_pred, average='weighted')
 ```
 
-### 
-This repo is organized as follows: 
-- [Project Assignment](./PDFs/assignment.pdf)
-- [Datasets](./datasets/)
-- [code](./code/)
-- [Project Report](./PDFs/report.pdf)
+--- 
 
-## Implementation 
+### 🗂 Folder organization
+This repo is organized as follows: 
+- `PDFs` contains details about experiments and discuss the results.
+- `datasets` contains a local copy of the original dataset.
+- `code` contains the different modules used to train and evaluate different models.
+
+## 👨‍💻 Implementation 
 
 In the `models.py` has been implemented different classifiers: SVM (linear), RandomForest, Naive Bayes Classifiers (Multinomial). During training an hyperparameter search is performed.
 In order to limit the effect of the unbalanced dataset (i.e. overfitting) for the training and validation phase a cross-validation approach was used, specifically with the implementation of Scikit-learn’s `KFold` class. The approach divides all the samples in groups of subsamples and consequently the prediction function was learned using k-1 folds and the fold left out was used for test. The default value for the number of folds was set to 10.
@@ -45,4 +46,5 @@ Overall the **best accuracy 0.9694** was obtained using *Linear SVM* with stemme
 ▶ Further details about data exploration, data preprocessing, model selection and results [see the project report](./PDFs/report.pdf).
 
 ### References
-[1] Original dataset located [here](http://dbdmg.polito.it/wordpress/wp-content/uploads/2020/01/dataset_winter_2020.zip).
+[1] The original dataset can be downloaded [here](http://dbdmg.polito.it/wordpress/wp-content/uploads/2020/01/dataset_winter_2020.zip).
+[2] Submission platform [link](http://35.158.140.217/)
