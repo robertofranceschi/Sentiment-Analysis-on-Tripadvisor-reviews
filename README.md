@@ -1,4 +1,4 @@
-# 🛌🏽 Sentiment Analysis on Tripadvisor reviews
+# Sentiment Analysis on Tripadvisor reviews 🛌🏽
 
 ## Problem Description
 
@@ -19,7 +19,7 @@ The dataset archive is organized as follows:
 
 ### Evaluation metric
 Your submissions will be evaluated exploiting the `f1_score` with the following configuration:
-```
+```python
   from sklearn.metrics import f1_score
   f1_score(y_true, y_pred, average='weighted')
 ```
