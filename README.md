@@ -35,9 +35,9 @@ This repo is organized as follows:
 ## 👨‍💻 Implementation 
 
 Inside `models.py` are implemented different classifiers: 
-- SVM (linear)
-- RandomForest
-- Näive Bayes Classifiers (Multinomial).
+- Support Vector Machine (Linear)
+- Random Forest
+- Näive Bayes Classifiers (Multinomial)
 
 During training an hyperparameter search is performed (using a validation set).
 In order to limit the effect of the unbalanced dataset (i.e. overfitting) for the training and validation phase a cross-validation approach was used, specifically with the implementation `KFold` class from `scikit-learn`. The approach divides all the samples in groups of subsamples and consequently the prediction function was learned using k-1 folds and the fold left out was used for test. The default value for the number of folds was set to 10.
