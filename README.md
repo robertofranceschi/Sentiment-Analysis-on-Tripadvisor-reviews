@@ -51,5 +51,5 @@ The f1-score (on test set) of the best performing model is **0.9694**. The model
 ▶ Further details about data exploration, data preprocessing, model selection and results [see the project report](./PDFs/report.pdf).
 
 ### References
-[1] The original dataset can be downloaded [here](http://dbdmg.polito.it/wordpress/wp-content/uploads/2020/01/dataset_winter_2020.zip).
+[1] The original dataset can be downloaded [here](http://dbdmg.polito.it/wordpress/wp-content/uploads/2020/01/dataset_winter_2020.zip) <br>
 [2] Submission platform [link](http://35.158.140.217/)
