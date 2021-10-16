@@ -28,9 +28,9 @@ Your submissions will be evaluated exploiting the `f1_score` with the following 
 
 ### 🗂 Folder organization
 This repo is organized as follows: 
-- `PDFs` contains details about experiments and discuss the results.
-- `datasets` contains a local copy of the original dataset.
-- `code` contains the different modules used to train and evaluate different models.
+- `/PDFs` contains details about experiments and discuss the results.
+- `/datasets` contains a local copy of the original dataset.
+- `/code` contains the different modules used to train and evaluate different models.
 
 ## 👨‍💻 Implementation 
 
