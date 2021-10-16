@@ -1,4 +1,4 @@
-# Sentiment Analysis on Tripadvisor reviews 🛌🏽
+# 🛌🏽 Sentiment Analysis on Tripadvisor reviews
 
 ## Problem Description
 
