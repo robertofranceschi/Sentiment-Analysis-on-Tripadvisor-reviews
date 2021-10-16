@@ -4,7 +4,7 @@
 
 Perform sentiment analysis of textual reviews of hotel stays. The goal is to build a binary classifier able to understand whether the users expressed positive or negative feelings in their comments.
 
-> TL;DR The best model after K-fold cross validation is the Linear SVC. The f1-score obtained after submission is 0.9694 on test set.
+> **TL;DR** The best model after K-fold cross validation is the Linear SVC. The f1-score obtained after submission is 0.9694 on test set. Preprocessing methods like stemming and emoji interpretation are beneficial independetly on the model used.
 
 ### Dataset
 
